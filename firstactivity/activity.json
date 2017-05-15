@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "flogo:activity",
   "description": "activity description",
-  "author": "Your Name <you.name@example.org>",
+  "author": "Shaohua Qu <shqu@tibco.com>",
   "inputs":[
     {
       "name": "input",

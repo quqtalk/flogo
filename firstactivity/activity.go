@@ -1,6 +1,7 @@
 package firstactivity
 
 import (
+	"fmt"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )
 
@@ -23,6 +24,10 @@ func (a *MyActivity) Metadata() *activity.Metadata {
 func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	// do eval
+	
+	input :=context.GetInput("input")
 
+	fmt.Println(input)
+	
 	return true, nil
 }
