@@ -1,11 +1,11 @@
 {
-  "name": "tibco-log",
+  "name": "activity-log",
   "type": "flogo:activity",
   "ref": "github.com/quqtalk/flogo/firstactivity",
   "version": "0.0.1",
   "title": "Log Message",
   "description": "Simple Log Activity",
-  "homepage": "https://github.com/TIBCOSoftware/flogo-contrib/tree/master/activity/log",
+  "homepage": "https://github.com/quqtalk/flogo/firstactivity",
   "inputs":[
     {
       "name": "message",
