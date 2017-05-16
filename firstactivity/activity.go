@@ -28,6 +28,6 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 //	input :=context.GetInput("input")
 
 	fmt.Println("dddddd")
-	
+context.SetOutput("output", "dddddddd")	
 	return true, nil
 }
