@@ -1,19 +1,31 @@
 {
-  "name": "firstactivity",
-  "version": "0.0.1",
-  "ref": "github.com/quqtalk/flogo/firstactivity"
+  "name": "tibco-log",
   "type": "flogo:activity",
-  "description": "activity description",
-  "author": "Shaohua Qu <shqu@tibco.com>",
+  "ref": "github.com/TIBCOSoftware/flogo-contrib/activity/log",
+  "version": "0.0.1",
+  "title": "Log Message",
+  "description": "Simple Log Activity",
+  "homepage": "https://github.com/TIBCOSoftware/flogo-contrib/tree/master/activity/log",
   "inputs":[
     {
-      "name": "input",
-      "type": "string"
+      "name": "message",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "flowInfo",
+      "type": "boolean",
+      "value": "false"
+    },
+    {
+      "name": "addToFlow",
+      "type": "boolean",
+      "value": "false"
     }
   ],
   "outputs": [
     {
-      "name": "output",
+      "name": "message",
       "type": "string"
     }
   ]

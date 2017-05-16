@@ -1,10 +1,11 @@
-package firstactivity
+package log
 
 import (
-	"io/ioutil"
+	"fmt"
 	"testing"
+	"io/ioutil"
 
-	"github.com/TIBCOSoftware/flogo-lib/core/activity"
+	"github.com/TIBCOSoftware/flogo-lib/flow/activity"
 	"github.com/TIBCOSoftware/flogo-lib/flow/test"
 )
 
@@ -37,19 +38,33 @@ func TestCreate(t *testing.T) {
 
 func TestEval(t *testing.T) {
 
-	defer func() {
-		if r := recover(); r != nil {
-			t.Failed()
-			t.Errorf("panic during execution: %v", r)
-		}
-	}()
+	act := NewActivity(getActivityMetadata())
+	tc := test.NewTestActivityContext(getActivityMetadata())
+
+	//setup attrs
+	tc.SetInput("message", "test message")
+	tc.SetInput("flowInfo", true)
+
+	act.Eval(tc)
+}
+
+func TestAddToFlow(t *testing.T) {
 
 	act := NewActivity(getActivityMetadata())
 	tc := test.NewTestActivityContext(getActivityMetadata())
 
 	//setup attrs
+	tc.SetInput("message", "test message")
+	tc.SetInput("flowInfo", true)
+	tc.SetInput("addToFlow", true)
 
 	act.Eval(tc)
 
-	//check result attr
+	msg := tc.GetOutput("message")
+
+	fmt.Println("Message: ", msg)
+
+	if msg == nil {
+		t.Fail()
+	}
 }
