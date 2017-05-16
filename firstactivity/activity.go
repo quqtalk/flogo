@@ -25,9 +25,9 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	// do eval
 	
-	input :=context.GetInput("input")
+//	input :=context.GetInput("input")
 
-	fmt.Println(input)
+	fmt.Println("dddddd")
 	
 	return true, nil
 }
