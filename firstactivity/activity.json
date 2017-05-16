@@ -1,6 +1,7 @@
 {
   "name": "firstactivity",
   "version": "0.0.1",
+  "ref": "github.com/quqtalk/flogo/firstactivity"
   "type": "flogo:activity",
   "description": "activity description",
   "author": "Shaohua Qu <shqu@tibco.com>",
