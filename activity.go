@@ -28,7 +28,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	return true, nil
 }
 
-func ()Xxx string {
+func Xxx() string {
     fmt.Println("xxxx")
     return "xxxx"
 }
