@@ -1,7 +1,6 @@
-package xxxactivity
+package flogox
 
 import (
-    "fmt"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )
 
@@ -26,9 +25,4 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 	// do eval
 
 	return true, nil
-}
-
-func Xxx() string {
-    fmt.Println("xxxx")
-    return "xxxx"
 }

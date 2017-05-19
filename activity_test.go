@@ -1,4 +1,4 @@
-package xxxactivity
+package flogox
 
 import (
 	"io/ioutil"
