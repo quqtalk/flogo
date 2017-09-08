@@ -76,3 +76,10 @@ Configure a task to log a 'petId' attribute as a message:
   ]
 }
 ```
+```java
+public class A{
+  int x = 0;
+}
+```
+
+
